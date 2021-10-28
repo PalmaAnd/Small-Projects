@@ -25,6 +25,8 @@ This repository is always a WIP, so you can expect new additions after some time
 - <a href="https://github.com/PalmaAnd/Small-Projects/tree/main/Shellscripts" >Shellscript Project</a>
 # Technology Stack
 
-<img src="Icons/git.svg" width="30" height="30" alt="Git">
-<img src="Icons/github.svg" width="30" height="30" alt="GitHub">
-<img src="Icons/gnubash.svg" width="30" height="30" alt="Bash/Script">
+<div style="display: inline-block">
+  <img src="Icons/git.svg" width="30" height="30" alt="Git">
+  <img src="Icons/github.svg" width="30" height="30" alt="GitHub">
+  <img src="Icons/gnubash.svg" width="30" height="30" alt="Bash/Script">
+</div>
