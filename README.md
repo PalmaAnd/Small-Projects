@@ -8,6 +8,7 @@
   - [Additional notes](#additional-notes)
   - [Used Websites](#used-websites)
   - [Projects](#projects)
+- [Technology Stack](#technology-stack)
 
 
 ## Motivation
@@ -19,6 +20,11 @@ Depending on the project you select I will try to add a new README-File so you c
 ## Additional notes
 This repository is always a WIP, so you can expect new additions after some time (probably not very regularly)
 ## Used Websites
-- [Shellscript project](https://dev.to/techieeliot/is-your-github-empty-2gkh)
+- <a href="https://dev.to/abdadeel/shell-scripting-basics-beginners-guide-1h2b" >Shell scripting for beginners</a>
 ## Projects
-- ### Shellscripts
+- <a href="https://github.com/PalmaAnd/Small-Projects/tree/main/Shellscripts" >Shellscript Project</a>
+# Technology Stack
+
+<img src="Icons/git.svg" width="30" height="30" alt="Git">
+<img src="Icons/github.svg" width="30" height="30" alt="GitHub">
+<img src="Icons/gnubash.svg" width="30" height="30" alt="Bash/Script">
