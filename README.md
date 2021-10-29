@@ -27,5 +27,4 @@ This repository is always a WIP, so you can expect new additions after some time
 
 <a href="https://git-scm.com/" target="_blank"> <img alt="Git" width="35px" src="https://github.com/PalmaAnd/PalmaAnd/blob/main/icons/git.svg"/> </a>
 <a href="https://github.com/PalmaAnd/" target="_blank"> <img alt="GitHub" width="35px" src="https://github.com/PalmaAnd/PalmaAnd/blob/main/icons/github.svg"/> </a>
-<a href="https://www.gnu.org/" target="_blank"> <img src="Icons/gnubash.svg" width="35px" alt="Bash/Script">
-<a href="https://www.gnu.org/" target="_blank"> <img src="Icons/console-48.png" width="35px" alt="Bash/Script">
+<a href="https://www.gnu.org/" target="_blank"> <img src="Icons/gnubash.svg" width="35px" alt="Bash/Script"> <img src="Icons/console-48.png" width="35px" alt="Bash/Script">
