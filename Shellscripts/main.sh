@@ -56,8 +56,12 @@ function retry() {
         echo "======================================="
         echo "- 'namelist': Writes the given name into a names.txt file inside the folder you gave when starting the command."
         echo "- 'flip a coin': Flips a coin."
+        echo "- 'quit': Closes the console."
         read -p "Please press enter to continue"
         retry
+    elif [ "$COMMANDUSER" == "quit" ]
+    then
+        return
     else
         read -p "Command not found. Please press enter to go back."
         retry
