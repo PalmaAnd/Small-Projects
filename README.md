@@ -36,13 +36,16 @@ This repository is always a WIP, so you can expect new additions after some time
 ## Used Websites
 
 - <a href="https://dev.to/abdadeel/shell-scripting-basics-beginners-guide-1h2b" >Shell scripting for beginners</a>
+- <a href="https://os.mbed.com/docs/mbed-os/v6.15/introduction/index.html">MBED Getting started</a>
 
 ## Projects
 
 - <a href="https://github.com/PalmaAnd/Small-Projects/tree/main/Shellscripts" >Shellscript Project</a>
+- <a href="https://github.com/PalmaAnd/Small-Projects/tree/main/mbed-getting-started" >mbed-getting-started</a>
 
 # Technology Stack
 
 <a href="https://git-scm.com/" target="_blank"> <img alt="Git" width="35px" src="https://github.com/PalmaAnd/PalmaAnd/blob/main/icons/git.svg"/> </a>
 <a href="https://github.com/PalmaAnd/" target="_blank"> <img alt="GitHub" width="35px" src="https://github.com/PalmaAnd/PalmaAnd/blob/main/icons/github.svg"/> </a>
+<a href="https://www.w3schools.com/cpp/" target="_blank"> <img src="Icons/c++.svg" width="35px" alt="C++">
 <a href="https://www.gnu.org/" target="_blank"> <img src="Icons/gnubash.svg" width="35px" alt="Bash/Script"> <img src="Icons/console-48.png" width="35px" alt="Bash/Script">
