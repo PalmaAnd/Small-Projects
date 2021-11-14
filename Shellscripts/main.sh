@@ -70,7 +70,7 @@ function retry() {
 
 echo "Welcome to this little shellscript."
 echo "Developed by Palma Andrè."
-echo "Enter 'help' to see a list of commands or press 'Strg+C to' close the console."
+echo "Enter 'help' to see a list of commands or press 'Strg+C' to close the console."
 
 # we call the code above inside a function so we can call it again if it ends with error
 # ? $1 is the given string after calling the command inside a terminal
