@@ -30,9 +30,9 @@ This repository is always a WIP, so you can expect new additions after some time
   
     Example:
 
-      *...\Small Projects\>* cd Shellscript
-      *...\Small Projects\Shellscript>* bash main.sh
-      *Enter your option:* **help**
+      ...\Small Projects\> cd Shellscript
+      ...\Small Projects\Shellscript> bash main.sh
+      Enter your option: help
 
 ## Used Websites
 
