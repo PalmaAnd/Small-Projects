@@ -25,13 +25,14 @@ Depending on the project you select I will try to add a new README-File so you c
 This repository is always a WIP, so you can expect new additions after some time (probably not very regularly)
 
 - Shellscripts:
-  - I'm using Git Bash on Windows 10 for testing. Just move into the folder containing the .sh-File and enter the name of it in the console your project should be running.
-  Example:
 
-    ```
-    ...\Small Projects\> cd Shellscript
-    ...\Small Projects\Shellscript> main.sh
-    ```
+  I'm using Git Bash on Windows 10 for testing. Just move into the folder containing the .sh-file and enter ```bash main.sh```.
+  
+    Example:
+
+      ...\Small Projects\> cd Shellscript
+      ...\Small Projects\Shellscript> bash main.sh
+      Enter your option: help
 
 ## Used Websites
 
@@ -45,7 +46,5 @@ This repository is always a WIP, so you can expect new additions after some time
 
 # Technology Stack
 
-<a href="https://git-scm.com/" target="_blank"> <img alt="Git" width="35px" src="https://github.com/PalmaAnd/PalmaAnd/blob/main/icons/git.svg"/> </a>
-<a href="https://github.com/PalmaAnd/" target="_blank"> <img alt="GitHub" width="35px" src="https://github.com/PalmaAnd/PalmaAnd/blob/main/icons/github.svg"/> </a>
-<a href="https://www.w3schools.com/cpp/" target="_blank"> <img src="Icons/c++.svg" width="35px" alt="C++">
-<a href="https://www.gnu.org/" target="_blank"> <img src="Icons/gnubash.svg" width="35px" alt="Bash/Script"> <img src="Icons/console-48.png" width="35px" alt="Bash/Script">
+![ShellScript](https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white)
+![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
