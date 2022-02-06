@@ -1,6 +1,43 @@
 #! /bin/bash
 
-# create name list and checks if name already exists inside the folder
+# This function gives the user the option to use multiple functions.
+# At the beginning we ask the user for the command he wants to use and if the given command is not found we restart the function. 
+function main() {
+    read -p "Enter your option: " COMMANDUSER
+    # ? NOTE: the whitespace after the [ is needed
+    if [ "$COMMANDUSER" == "namelist" ]
+    then
+        create_name_list
+        main
+    elif [ "$COMMANDUSER" == "backup" ]
+    then
+        backup
+        main
+    elif [ "$COMMANDUSER" == "fac" ]
+    then
+        ./flipacoin.sh
+        read -p "Please press enter to continue"
+        main
+    elif [ "$COMMANDUSER" == "help" ]
+    then
+        echo "List of commands:"
+        echo "=================================================================="
+        echo "- 'namelist': Writes the given name into a names.txt file inside the folder you gave when starting the command."
+        echo "- 'backup': Creates a backup of all data inside the 'storage folder'."
+        echo "- 'fac': Flips a coin."
+        echo "- 'quit': Closes the console."
+        echo "=================================================================="
+        main
+    elif [ "$COMMANDUSER" == "quit" ]
+    then
+        return
+    else
+        echo "Command not found. Please try again."
+        main
+    fi
+}
+
+# Create names.txt file. Writes given string into the file the name does not exist inside the file.
 function create_name_list() {
     read -p "Enter in what folder you want to write: " FOLDERNAME
     if [[ $FOLDERNAME ]]
@@ -37,44 +74,7 @@ function create_name_list() {
     fi
 }
 
-# This function gives the user the option to use multiple functions.
-# At the beginning we ask the user for the command he wants to use and if the given command is not found we restart the function. 
-function retry() {
-    read -p "Enter your option: " COMMANDUSER
-    # ? NOTE: the whitespace after the [ is needed
-    if [ "$COMMANDUSER" == "namelist" ]
-    then
-        create_name_list
-        retry
-    elif [ "$COMMANDUSER" == "backup" ]
-    then
-        backup
-        retry
-    elif [ "$COMMANDUSER" == "flip a coin" ]
-    then
-        ./flipacoin.sh
-        read -p "Please press enter to continue"
-        retry
-    elif [ "$COMMANDUSER" == "help" ]
-    then
-        echo "List of commands:"
-        echo "======================================="
-        echo "- 'namelist': Writes the given name into a names.txt file inside the folder you gave when starting the command."
-        echo "- 'backup': Creates a backup of all data inside the 'storage folder'."
-        echo "- 'flip a coin': Flips a coin."
-        echo "- 'quit': Closes the console."
-        read -p "Please press enter to continue"
-        retry
-    elif [ "$COMMANDUSER" == "quit" ]
-    then
-        return
-    else
-        echo "Command not found. Please try again."
-        retry
-    fi
-}
-
-# Creates a backup folder if it does not already exist and copies all content of storage.
+# Creates a backup folder, if it does not already exist and copies all content of the given folder.
 # The function also gives the user to clear all content of the backup folder first.
 function backup() {
     if [ ! -d "backup" ]
@@ -86,14 +86,21 @@ function backup() {
     then
         rm -rf backup/*
     fi
-    cp -r storage/ backup/
+    read -p "Enter what folder you want to backup: " FOLDERNAME
+    if [ -d $FOLDERNAME ]
+    then
+        cp -r $FOLDERNAME/ backup/
+    else
+        echo "Folder does not exist, please try again."
+        backup
+    fi
 }
 
 ###
 # Main body of script starts here
 ###
-echo "Welcome to this little shellscript."
+echo "Welcome to this little script."
 echo "Developed by Palma Andrè."
 echo "Enter 'help' to see a list of commands or press 'Strg+C' to close the console."
 
-retry
+main
