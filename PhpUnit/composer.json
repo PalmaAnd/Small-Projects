@@ -7,8 +7,7 @@
     },
     "authors": [
         {
-            "name": "PalmaAnd",
-            "email": "andrepalma@outlook.de"
+            "name": "PalmaAnd"
         }
     ],
     "require-dev": {
