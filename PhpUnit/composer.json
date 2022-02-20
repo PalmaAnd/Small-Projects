@@ -1,0 +1,17 @@
+{
+    "name": "andre/php-unit",
+    "autoload": {
+        "psr-4": {
+            "Unittesting\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "PalmaAnd",
+            "email": "andrepalma@outlook.de"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    }
+}
