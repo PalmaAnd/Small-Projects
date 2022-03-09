@@ -10,23 +10,25 @@ namespace Unittesting\Classes;
 class User
 {
 
-    private $fullname;
+    private $firstname;
+    private $lastname;
     private $age;
     private $mail;
 
-    function __construct($fullname, $age, $mail)
+    function __construct($firstname, $lastname, $age, $mail)
     {
-        $this->fullname = $fullname;
+        $this->firstname = $firstname;
+        $this->lastname = $lastname;
         $this->age = $age;
         $this->mail = $mail;
     }
 
     /**
-     * Get the value of fullname
+     * Get the value of firstname
      */
-    public function getFullname()
+    public function getfirstname()
     {
-        return $this->fullname;
+        return $this->firstname;
     }
 
     /**
@@ -38,13 +40,33 @@ class User
     }
 
     /**
-     * Set the value of fullname
+     * Set the value of firstname
      *
      * @return  self
      */
-    public function setFullname($fullname)
+    public function setfirstname($firstname)
     {
-        $this->fullname = $fullname;
+        $this->firstname = $firstname;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of lastname
+     */
+    public function getLastname()
+    {
+        return $this->lastname;
+    }
+
+    /**
+     * Set the value of lastname
+     *
+     * @return  self
+     */
+    public function setLastname($lastname)
+    {
+        $this->lastname = $lastname;
 
         return $this;
     }
@@ -60,17 +82,37 @@ class User
 
         return $this;
     }
-    
+
+    /**
+     * Get the value of mail
+     */
+    public function getMail()
+    {
+        return $this->mail;
+    }
+
+    /**
+     * Set the value of mail
+     *
+     * @return  self
+     */
+    public function setMail($mail)
+    {
+        $this->mail = $mail;
+
+        return $this;
+    }
+
     /**
      * Create a user with the given username, age and mail.
      *
-     * @param Type $var Description
-     * @return type
-     * @throws conditon
-     **/
-    public function createUser(string $fullname, int $age, Email $mail = null)
+     * @param string $firstname
+     * @param integer $age
+     * @param Email|null $mail
+     * @return void
+     */
+    public function createUser(string $firstname, string $lastname, int $age, Email $mail = null)
     {
         # code...
     }
-
 }
