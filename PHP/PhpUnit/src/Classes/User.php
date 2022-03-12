@@ -118,9 +118,9 @@ class User
     {
         if (empty($mail)) {
             $mail = (new Email)->createMail(strtolower($firstname), strtolower($lastname));
-        }   
+        }
 
-        $user = (new User($firstname, $lastname, $age, $mail));
+        $user = new User($firstname, $lastname, $age, $mail);
 
         return $user;
     }

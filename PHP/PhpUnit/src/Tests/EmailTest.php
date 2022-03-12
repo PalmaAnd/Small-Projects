@@ -10,6 +10,10 @@ use Unittesting\Classes\Email as Mail;
 class EmailTest extends TestCase
 {
 
+    /**
+     * @test Test function for User::createMail what should result in a success.
+     * @return success
+     */
     public function testCreateMail()
     {
         $this->assertEquals('max.mustermann@unit.testing', (new Mail)->createMail('max', 'mustermann'), 'Running: Email::createMail');
