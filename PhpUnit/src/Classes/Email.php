@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Unittesting\Classes;
@@ -13,9 +14,12 @@ class Email
      * @return string if the given mail was valid
      * @return false if the given mail was not written in a valid format
      */
-    public function createMail(string $mail)
+    public function createMail(string $firstname, string $lastname)
     {
-        $pattern = "^([a-z0-9\+_\-]+)(\.[a-z0-9\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,10}$";
+        $pattern = "^([a-z\+_\-]+)(\.[a-z\+_\-]+)*@([a-z0-9\-]+\.)+[a-z]{2,10}$";
+
+        $mail = $firstname . '.' . $lastname . '@unit.testing';
+
         /** 
          * @var boolean $is_valid 
          * Validates the given string, with the RegEx defined in $pattern 
@@ -24,11 +28,10 @@ class Email
          * because preg_match searches a ending delimiter for ^
          */
         $is_valid = preg_match('/' . $pattern . '/', $mail);
-        if ($is_valid){
+        if ($is_valid) {
             return $mail;
         } else {
-            return 'Please enter a valid email address';
+            return 'Please enter a valid email address.';
         }
     }
-
 }
