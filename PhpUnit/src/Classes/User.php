@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+use Unittesting\Classes\Email;
+
 namespace Unittesting\Classes;
 
 /**
@@ -105,6 +107,7 @@ class User
 
     /**
      * Create a user with the given username, age and mail.
+     * If no mail was give, create a mail by using first- and lastname.
      *
      * @param string $firstname
      * @param integer $age
@@ -113,6 +116,12 @@ class User
      */
     public function createUser(string $firstname, string $lastname, int $age, Email $mail = null)
     {
-        # code...
+        if (empty($mail)) {
+            $mail = (new Email)->createMail(strtolower($firstname), strtolower($lastname));
+        }   
+
+        $user = (new User($firstname, $lastname, $age, $mail));
+
+        return $user;
     }
 }
