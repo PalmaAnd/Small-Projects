@@ -5,7 +5,7 @@
   - [Description](#description)
   - [Additional notes regarding this project](#additional-notes-regarding-this-project)
   - [Used Websites](#used-websites)
-- [Technology Stack](#technology-stack)
+  - [Technology Stack](#technology-stack)
 
 ## Motivation
 
@@ -37,16 +37,16 @@ This repository is always a WIP, so you can expect new additions after some time
 
 - __Lua:__
 
-  To run *__.lua__* files, you will need to install Lua on your system, for example you can use WSL ``sudo apt install lua5.3``. Afterwards you can simply run all files by ``lua filename.lua``. I would also recommend to use the *Lua* Extension by __sumneko__ if you are using Visual Studio Code.
+  To run *__.lua__* files, you will need to install Lua on your system, for example you can use WSL ``sudo apt install lua5.3``. Afterwards you can simply run all files by ``lua filename.lua``. I would also recommend to use the [*Lua* Extension by __sumneko__](https://marketplace.visualstudio.com/items?itemName=sumneko.lua) if you are using Visual Studio Code.
 
 ## Used Websites
 
-- <a href="https://dev.to/abdadeel/shell-scripting-basics-beginners-guide-1h2b" >Shell scripting for beginners</a>
-- <a href="https://os.mbed.com/docs/mbed-os/v6.15/introduction/index.html">MBED Getting started</a>
-- <a href="https://phpunit.de/">PHPUnit Documentation</a>
-- <a href="https://www.lua.org/docs.html">Lua Documentation</a>
+- [Shell scripting for beginners](https://dev.to/abdadeel/shell-scripting-basics-beginners-guide-1h2b)
+- [MBED Getting started](https://os.mbed.com/docs/mbed-os/v6.15/introduction/index.html)
+- [PHPUnit Documentation](https://phpunit.de/)
+- [Lua Documentation](https://www.lua.org/docs.html)
 
-# Technology Stack
+## Technology Stack
 
 ![ShellScript](https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white)
 ![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
