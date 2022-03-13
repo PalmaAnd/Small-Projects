@@ -37,7 +37,7 @@ This repository is always a WIP, so you can expect new additions after some time
 
 - __Lua:__
 
-  To run *__.lua__* files, you will need to install Lua on your system, for example you can use WSL ``sudo apt install lua5.3``. Afterwards you can simply run all files by ``lua filename.lua``
+  To run *__.lua__* files, you will need to install Lua on your system, for example you can use WSL ``sudo apt install lua5.3``. Afterwards you can simply run all files by ``lua filename.lua``. I would also recommend to use the *Lua* Extension by __sumneko__ if you are using Visual Studio Code.
 
 ## Used Websites
 
