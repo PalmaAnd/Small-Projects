@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ff3b84b-f907-4330-a214-a42f63f7d72e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/math/MathProblems.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Java.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fibonacci.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +23,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2Itn8a8cXFzlQfVKr0XijEXV8z7" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -64,10 +59,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671009588545</updated>
       <workItem from="1671009590061" duration="20000" />
-      <workItem from="1673432642372" duration="486000" />
-      <workItem from="1673434958699" duration="48000" />
-      <workItem from="1673444588984" duration="5000" />
-      <workItem from="1678374313446" duration="874000" />
+      <workItem from="1673432642372" duration="32000" />
     </task>
     <servers />
   </component>
